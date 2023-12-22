@@ -1,8 +1,6 @@
-//import { Router } from 'express';
-//import ProductManager from '../managers/ProductManager.js';
 const express = require('express');
 const ProductManager = require('../managers/ProductManager.js');
-const productManager = new ProductManager('./src/data/productos.json');
+const productManager = new ProductManager();
 const router = express.Router();
 
 router

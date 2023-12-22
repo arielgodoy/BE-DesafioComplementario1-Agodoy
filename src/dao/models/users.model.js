@@ -1,7 +1,5 @@
 const {Schema, model} = require('mongoose')
-
 const usersCollection = 'Usuarios'
-
 const UsersSchema = Schema({
     first_name: {
         type: String,

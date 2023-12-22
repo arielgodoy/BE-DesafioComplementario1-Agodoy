@@ -18,8 +18,6 @@ const connectDb = async () => {
 connectDb()
 
 
-//const productManager = new ProductManager(db);
-
 const app = express();
 const port = 8080;
 app.use(express.json());
