@@ -6,7 +6,7 @@ const productRouter = require('./routes/products.router.js');
 const cartRouter = require('./routes/carts.router.js');
 const hbsrouter = require('./routes/handlebars.router.js');
 const userRouter = require('./routes/users.router.js')
-const ProductManager = require('./managers/ProductManager.js');
+const ProductManager = require('./managers/ProductManagerMongo.js');
 const { connect } = require('mongoose')
 //Mongo
 // Conectar a la base de datos
@@ -32,6 +32,7 @@ app.set("views", path.resolve(__dirname + '/views'));
 // routers
 app.use('/api/products', productRouter);
 app.use('/api/carts', cartRouter);
+
 app.use('/',hbsrouter);
 app.use('/api/users', userRouter)
 

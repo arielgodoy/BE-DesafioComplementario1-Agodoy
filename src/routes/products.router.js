@@ -1,5 +1,5 @@
 const express = require('express');
-const ProductManager = require('../managers/ProductManager.js');
+const ProductManager = require('../managers/ProductManagerMongo.js');
 const productManager = new ProductManager();
 const router = express.Router();
 
